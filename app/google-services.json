@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "569394240427",
+    "project_id": "tutofirestore",
+    "storage_bucket": "tutofirestore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569394240427:android:4a033af36dc44bd0c250ee",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569394240427-aitnlo7k5pkh7l6sb0h9dpu46af43usq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjCiIs7NRMU-7H5ivfXYg1zdjm4Nz6TmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569394240427-aitnlo7k5pkh7l6sb0h9dpu46af43usq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569394240427:android:db6c7991e729039ec250ee",
+        "android_client_info": {
+          "package_name": "com.example.testfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569394240427-aitnlo7k5pkh7l6sb0h9dpu46af43usq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjCiIs7NRMU-7H5ivfXYg1zdjm4Nz6TmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569394240427-aitnlo7k5pkh7l6sb0h9dpu46af43usq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
