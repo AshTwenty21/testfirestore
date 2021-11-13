@@ -1,5 +1,6 @@
 package com.example.testfirestore;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText courseNameEdt, courseDurationEdt, courseDescriptionEdt;
 
     // creating variable for button
-    private Button submitCourseBtn;
+    private Button submitCourseBtn, viewCoursesBtn;
 
     // creating a strings for storing
     // our values from edittext fields.
@@ -46,6 +47,17 @@ public class MainActivity extends AppCompatActivity {
         courseDescriptionEdt = findViewById(R.id.idEdtCourseDescription);
         courseDurationEdt = findViewById(R.id.idEdtCourseDuration);
         submitCourseBtn = findViewById(R.id.idBtnSubmitCourse);
+        viewCoursesBtn = findViewById(R.id.idBtnViewCourses);
+
+        // adding onclick listener to view data in new activity
+        viewCoursesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // opening a new activity on button click
+                Intent i = new Intent(MainActivity.this,CourseDetails.class);
+                startActivity(i);
+            }
+        });
 
         // adding on click listener for button
         submitCourseBtn.setOnClickListener(new View.OnClickListener() {

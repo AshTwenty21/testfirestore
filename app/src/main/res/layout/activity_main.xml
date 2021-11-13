@@ -52,4 +52,13 @@
         android:text="Submit Course Details"
         android:textAllCaps="false" />
 
+    <!--Button for showing the list of added courses-->
+    <Button
+        android:id="@+id/idBtnViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="View Added Courses"
+        android:textAllCaps="false" />
+
 </LinearLayout>
