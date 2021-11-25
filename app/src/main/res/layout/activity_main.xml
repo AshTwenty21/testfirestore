@@ -9,7 +9,7 @@
 
     <!--Edittext for getting course Name-->
     <EditText
-        android:id="@+id/idEdtCourseName"
+        android:id="@+id/idEdtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -21,7 +21,7 @@
 
     <!--Edittext for getting course Duration-->
     <EditText
-        android:id="@+id/idEdtCourseDuration"
+        android:id="@+id/idEdtTaste"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -33,7 +33,7 @@
 
     <!--Edittext for getting course Description-->
     <EditText
-        android:id="@+id/idEdtCourseDescription"
+        android:id="@+id/idEdtPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

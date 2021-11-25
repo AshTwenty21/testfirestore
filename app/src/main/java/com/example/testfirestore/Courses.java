@@ -3,7 +3,7 @@ package com.example.testfirestore;
 public class Courses {
 
     // variables for storing our data.
-    private String courseName, courseDescription, courseDuration;
+    private String Name, Price, Taste;
 
     public Courses() {
         // empty constructor
@@ -11,36 +11,36 @@ public class Courses {
     }
 
     // Constructor for all variables.
-    public Courses(String courseName, String courseDescription, String courseDuration) {
-        this.courseName = courseName;
-        this.courseDescription = courseDescription;
-        this.courseDuration = courseDuration;
+    public Courses(String Name, String Price, String Taste) {
+        this.Name = Name;
+        this.Price = Price;
+        this.Taste = Taste;
     }
 
     // getter methods for all variables.
-    public String getCourseName() {
-        return courseName;
+    public String getName() {
+        return Name;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
-    public String getCourseDescription() {
-        return courseDescription;
+    public String getPrice() {
+        return Price;
     }
 
     // setter method for all variables.
-    public void setCourseDescription(String courseDescription) {
-        this.courseDescription = courseDescription;
+    public void setPrice(String Price) {
+        this.Price = Price;
     }
 
-    public String getCourseDuration() {
-        return courseDuration;
+    public String getTaste() {
+        return Taste;
     }
 
-    public void setCourseDuration(String courseDuration) {
-        this.courseDuration = courseDuration;
+    public void setTaste(String Taste) {
+        this.Taste = Taste;
     }
 }
 

@@ -33,9 +33,9 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
     public void onBindViewHolder(@NonNull CourseRVAdapter.ViewHolder holder, int position) {
         // setting data to our text views from our modal class.
         Courses courses = coursesArrayList.get(position);
-        holder.courseNameTV.setText(courses.getCourseName());
-        holder.courseDurationTV.setText(courses.getCourseDuration());
-        holder.courseDescTV.setText(courses.getCourseDescription());
+        holder.NameTV.setText(courses.getName());
+        holder.TasteTV.setText(courses.getTaste());
+        holder.courseDescTV.setText(courses.getPrice());
     }
 
     @Override
@@ -46,16 +46,16 @@ public class CourseRVAdapter extends RecyclerView.Adapter<CourseRVAdapter.ViewHo
 
     class ViewHolder extends RecyclerView.ViewHolder {
         // creating variables for our text views.
-        private final TextView courseNameTV;
-        private final TextView courseDurationTV;
+        private final TextView NameTV;
+        private final TextView TasteTV;
         private final TextView courseDescTV;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             // initializing our text views.
-            courseNameTV = itemView.findViewById(R.id.idTVCourseName);
-            courseDurationTV = itemView.findViewById(R.id.idTVCourseDuration);
-            courseDescTV = itemView.findViewById(R.id.idTVCourseDescription);
+            NameTV = itemView.findViewById(R.id.idTVName);
+            TasteTV = itemView.findViewById(R.id.idTVTaste);
+            courseDescTV = itemView.findViewById(R.id.idTVPrice);
         }
     }
 }

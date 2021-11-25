@@ -18,18 +18,18 @@
 
         <!--Textview for displaying our Course Name-->
         <TextView
-            android:id="@+id/idTVCourseName"
+            android:id="@+id/idTVName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="2dp"
-            android:text="CourseName"
+            android:text="Name"
             android:textColor="@color/purple_500"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!--Textview for displaying our Course Duration-->
         <TextView
-            android:id="@+id/idTVCourseDuration"
+            android:id="@+id/idTVTaste"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="2dp"
@@ -38,7 +38,7 @@
 
         <!--Textview for displaying our Course Description-->
         <TextView
-            android:id="@+id/idTVCourseDescription"
+            android:id="@+id/idTVPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="2dp"

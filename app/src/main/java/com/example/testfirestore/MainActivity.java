@@ -20,14 +20,14 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class MainActivity extends AppCompatActivity {
 
     // creating variables for our edit text
-    private EditText courseNameEdt, courseDurationEdt, courseDescriptionEdt;
+    private EditText NameEdt, TasteEdt, PriceEdt;
 
     // creating variable for button
     private Button submitCourseBtn, viewCoursesBtn;
 
     // creating a strings for storing
     // our values from edittext fields.
-    private String courseName, courseDuration, courseDescription;
+    private String Name, Price, Taste;
 
     // creating a variable
     // for firebasefirestore.
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         db = FirebaseFirestore.getInstance();
 
         // initializing our edittext and buttons
-        courseNameEdt = findViewById(R.id.idEdtCourseName);
-        courseDescriptionEdt = findViewById(R.id.idEdtCourseDescription);
-        courseDurationEdt = findViewById(R.id.idEdtCourseDuration);
+        NameEdt = findViewById(R.id.idEdtName);
+        PriceEdt = findViewById(R.id.idEdtPrice);
+        TasteEdt = findViewById(R.id.idEdtTaste);
         submitCourseBtn = findViewById(R.id.idBtnSubmitCourse);
         viewCoursesBtn = findViewById(R.id.idBtnViewCourses);
 
@@ -65,33 +65,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // getting data from edittext fields.
-                courseName = courseNameEdt.getText().toString();
-                courseDescription = courseDescriptionEdt.getText().toString();
-                courseDuration = courseDurationEdt.getText().toString();
+                Name = NameEdt.getText().toString();
+                Price = PriceEdt.getText().toString();
+                Taste = TasteEdt.getText().toString();
 
                 // validating the text fields if empty or not.
-                if (TextUtils.isEmpty(courseName)) {
-                    courseNameEdt.setError("Please enter Course Name");
-                } else if (TextUtils.isEmpty(courseDescription)) {
-                    courseDescriptionEdt.setError("Please enter Course Description");
-                } else if (TextUtils.isEmpty(courseDuration)) {
-                    courseDurationEdt.setError("Please enter Course Duration");
+                if (TextUtils.isEmpty(Name)) {
+                    NameEdt.setError("Please enter Course Name");
+                } else if (TextUtils.isEmpty(Price)) {
+                    PriceEdt.setError("Please enter Course Description");
+                } else if (TextUtils.isEmpty(Taste)) {
+                    TasteEdt.setError("Please enter Course Duration");
                 } else {
                     // calling method to add data to Firebase Firestore.
-                    addDataToFirestore(courseName, courseDescription, courseDuration);
+                    addDataToFirestore(Name, Price, Taste);
                 }
             }
         });
     }
 
-    private void addDataToFirestore(String courseName, String courseDescription, String courseDuration) {
+    private void addDataToFirestore(String Name, String Price, String Taste) {
 
         // creating a collection reference
         // for our Firebase Firetore database.
-        CollectionReference dbCourses = db.collection("Courses");
+        CollectionReference dbCourses = db.collection("BbtSugar");
 
         // adding our data to our courses object class.
-        Courses courses = new Courses(courseName, courseDescription, courseDuration);
+        Courses courses = new Courses(Name, Price, Taste);
 
         // below method is use to add data to Firebase Firestore.
         dbCourses.add(courses).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
