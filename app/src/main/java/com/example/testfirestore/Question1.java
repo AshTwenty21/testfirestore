@@ -30,13 +30,15 @@ public class Question1 extends AppCompatActivity {
         EditText editText1 = (EditText) findViewById(R.id.edittext1);
         String texte = editText1.getText().toString();
 
-        //EditText editText2 = (EditText) findViewById(R.id.edittext2);
-        //int number = Integer.parseInt(editText1.getText().toString());
+        EditText editText2 = (EditText) findViewById(R.id.edittext2);
+        //int number = Integer.parseInt(editText2.getText().toString());
 
+
+        int number = 3;
 
         Intent intent = new Intent(this, Question2.class);
         intent.putExtra(EXTRA_TEXT, texte);
-        //intent.putExtra(EXTRA_NUMBER, number);
+        intent.putExtra(EXTRA_NUMBER, number);
         startActivity(intent);
     }
 }
