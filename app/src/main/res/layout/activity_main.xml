@@ -61,4 +61,10 @@
         android:text="View Added Courses"
         android:textAllCaps="false" />
 
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
 </LinearLayout>

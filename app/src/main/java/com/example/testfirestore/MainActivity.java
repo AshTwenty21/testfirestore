@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     // creating a variable
     // for firebasefirestore.
     private FirebaseFirestore db;
+
+    int number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+       Intent intent = getIntent();
+        number = intent.getIntExtra(Question5.EXTRA_NUMBER5, 0);
+
+        TextView textViewTotal = (TextView)  findViewById(R.id.textViewTotal);
+        textViewTotal.setText(""+number);
     }
 
     private void addDataToFirestore(String Name, String Price, String Taste) {
